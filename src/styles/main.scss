@@ -6,6 +6,7 @@
 @use './sections/home-section' as *;
 @use './layouts/header.scss' as *;
 @use './layouts/mobile-menus' as *;
+@use './components/wallet-balance' as *;
 
 
 .sections {

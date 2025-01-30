@@ -1,0 +1,222 @@
+.wallet-balance {
+  width: 100%;
+  max-width: 300px; 
+  height: auto; 
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0 auto; 
+
+  .wallet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+    h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .hide-action {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 400;
+      color: #db5800;
+      position: absolute;
+      top: 40px;
+      left: 20px;
+    }
+
+    .naira-sign {
+      background-color: #f0f0f0;
+      color: #666;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+  }
+
+  .balance-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .balance-amount {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .toggle-visibility {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      color: #666;
+      padding: 5px;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+
+  .wallet-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    .action-button {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #f0f0f0;
+      color: #333;
+      font-size: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+
+      span {
+        margin-right: 5px;
+      }
+
+      &.fund-wallet {
+        background-color: #4caf50;
+        color: #fff;
+        padding-left: 5px;
+        &:hover {
+          background-color: #45a049;
+        }
+      }
+
+      &.withdraw {
+        background-color: #f44336;
+        color: #fff;
+        padding-right: 5px;
+        &:hover {
+          background-color: #e53935;
+        }
+      }
+
+      &.dots {
+        padding: 8px 15px;
+      }
+    }
+  }
+
+  // Responsive Design
+  @media (max-width: 768px) {
+    max-width: 100%; // Allow full width on smaller screens
+    padding: 15px;
+
+    .wallet-header {
+      h3 {
+        font-size: 16px;
+      }
+
+      .hide-action {
+        font-size: 10px;
+        top: 35px;
+        left: 15px;
+      }
+
+      .naira-sign {
+        font-size: 12px;
+        padding: 4px 8px;
+      }
+    }
+
+    .balance-content {
+      .balance-amount {
+        font-size: 20px;
+      }
+
+      .toggle-visibility {
+        font-size: 16px;
+      }
+    }
+
+    .wallet-actions {
+      flex-wrap: wrap; // Allow buttons to wrap on smaller screens
+      gap: 8px;
+
+      .action-button {
+        font-size: 9px;
+        padding: 6px 10px;
+
+        &.fund-wallet,
+        &.withdraw {
+          flex: 1; // Allow buttons to take equal space
+        }
+
+        &.dots {
+          flex: 0 0 auto; // Prevent dots from growing
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+
+    .wallet-header {
+      h3 {
+        font-size: 14px;
+      }
+
+      .hide-action {
+        font-size: 9px;
+        top: 30px;
+        left: 10px;
+      }
+
+      .naira-sign {
+        font-size: 10px;
+        padding: 3px 6px;
+      }
+    }
+
+    .balance-content {
+      .balance-amount {
+        font-size: 18px;
+      }
+
+      .toggle-visibility {
+        font-size: 14px;
+      }
+    }
+
+    .wallet-actions {
+      gap: 5px;
+
+      .action-button {
+        font-size: 8px;
+        padding: 5px 8px;
+
+        &.fund-wallet,
+        &.withdraw {
+          flex: 1;
+        }
+
+        &.dots {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
