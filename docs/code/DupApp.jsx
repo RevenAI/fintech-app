@@ -1,10 +1,10 @@
-import Header from "./components/header/Header"
-import AboutSection from "./pages/sections/about-section/AboutSection"
-import BlogSection from "./pages/sections/blog-section/BlogSection"
-import HomeSection from "./pages/sections/home-section/HomeSection"
-import SupportSection from "./pages/sections/support-section/SupportSection"
-import Footer from "./components/footer/Footer"
-import SectionsContext from "./state/context/SectionsContext"
+import Header from "../../src/components/header/Header"
+import AboutSection from "../../src/pages/sections/about-section/AboutSection"
+import BlogSection from "../../src/pages/sections/blog-section/BlogSection"
+import HomeSection from "../../src/pages/sections/home-section/HomeSection"
+import SupportSection from "../../src/pages/sections/support-section/SupportSection"
+import Footer from "../../src/components/footer/Footer"
+import SectionsContext from "../../src/state/context/SectionsContext"
 import { useContext } from "react"
 
 function App() {

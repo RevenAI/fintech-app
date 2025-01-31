@@ -1,0 +1,1 @@
+//import bg from '../../assets/resources/about-section'

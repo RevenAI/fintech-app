@@ -1,0 +1,137 @@
+
+
+.inner-about-section {
+    background-color: #acff2f88;
+    margin-top: 150px;
+    height: 100vh;
+}
+
+.inner-about-section .most-inner .firstBgImg img{
+    max-width: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 400px;
+}
+
+.inner-about-section {
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box;
+  }
+  
+.most-inner {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  
+ 
+  .heading-content {
+    display: flex;
+    align-items: center;  /* Vertically align the image and text */
+    gap: 15px;           /* Space between image and text */
+    text-align: center;  /* Centers the text */
+    justify-content: center; /* Centers everything horizontally */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-top: 20px;
+}
+
+.heading-content img {
+    width: 50px; /* Default image size */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.heading-content h1 {
+    font-size: 24px; /* Default heading size */
+    font-weight: bold;
+    color: #333;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .heading-content {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        gap: 10px;
+    }
+
+    .heading-content h1 {
+        font-size: 20px; /* Reduce heading size */
+    }
+
+    .heading-content img {
+        width: 40px; /* Reduce image size */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-content h1 {
+        font-size: 18px; /* Further reduce text size for small screens */
+    }
+
+    .heading-content img {
+        width: 35px;
+    }
+}
+
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .heading-content {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        gap: 10px;
+    }
+
+    .heading-content h1 {
+        font-size: 20px; /* Reduce heading size */
+    }
+
+    .heading-content img {
+        width: 40px; /* Reduce image size */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-content h1 {
+        font-size: 18px; /* Further reduce text size for small screens */
+    }
+
+    .heading-content img {
+        width: 35px;
+    }
+}
+
+
+
+
+
+
+
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .firstBgImg {
+      width: 250px; 
+      height: 250px;
+      right: -30px; 
+    }
+    .inner-about-section .most-inner .firstBgImg img {
+        max-width: 30em;
+        margin-left: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .firstBgImg {
+      width: 200px; 
+      height: 200px;
+      right: -20px; 
+    }
+    .inner-about-section .most-inner .firstBgImg img {
+        max-width: 20em;
+        margin-left: 80px;
+    }
+  }
+

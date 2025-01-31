@@ -7,10 +7,13 @@
 @use './layouts/header.scss' as *;
 @use './layouts/mobile-menus' as *;
 @use './components/wallet-balance' as *;
+@use './sections/about-section' as *;
+@use './sections/about-section-cards' as *;
+@use './sections/about-section-cards' as *;
 
 
 .sections {
-    margin-top: 200px;
+   // margin-top: 60px;
     min-height: 100%;  
 }
 

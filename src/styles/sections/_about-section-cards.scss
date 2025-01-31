@@ -1,0 +1,140 @@
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: flex-start; 
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
+
+// Base styles for the card
+.card {
+  position: relative;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(33.333% - 40px); 
+  max-width: calc(33.333% - 40px); 
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  // Card icon styles
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // Card content styles
+  .card-content {
+    flex: 1;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.5;
+    }
+  }
+
+  // Download button styles
+  .download-btn {
+    align-self: flex-start; 
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    img:hover {
+    transform: scale(1.05); 
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; 
+    max-width: 100%;
+
+    .card-icon {
+      width: 35px;
+      height: 35px;
+    }
+
+    .card-content {
+      h2 {
+        font-size: 1.25rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+      }
+    }
+
+    .download-btn {
+      width: 80px;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    .card-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .card-content {
+      h2 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.75rem;
+      }
+    }
+
+    .download-btn {
+      width: 50px;
+      height: auto;
+    }
+  }
+}
+
+

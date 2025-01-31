@@ -6,6 +6,7 @@ import SupportSection from "./pages/sections/support-section/SupportSection"
 import Footer from "./components/footer/Footer"
 import useNavBar from "../hooks/useNavBar"
 import MobileHeader from "./components/header/MobileHeader"
+import AboutSubSection from "./pages/sections/about-section/about-subsection/AboutSubSection"
 
 function App() {
   const homeRef = useNavBar("Home");
@@ -22,8 +23,9 @@ function App() {
       </section>
       <section ref={aboutRef} id="about-section"   className="sections">
           <AboutSection />
+          <AboutSubSection />
       </section>
-      <section ref={blogRef} id="blog-section" className="sections">
+      <section style={{marginTop: "400px"}} ref={blogRef} id="blog-section" className="sections">
           <BlogSection />
       </section>
       <section ref={supportRef} id="support-section" className="sections">
