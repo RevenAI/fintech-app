@@ -2,7 +2,7 @@ import tinyIcon from '../../../assets/resources/home-section/secure-global-fast-
 import appInfoData from '../../../../data/app-info.json';
 import downloadBtn from '../../../assets/resources/home-section/download-button.svg';
 import watchDemoBtn from '../../../assets/resources/home-section/watch-demo-button.svg';
-import usersData from '../../../utils/usersData';
+import usersData from '../../../data/usersData';
 // hero section images
 import heroImage from '../../../assets/resources/home-section/slider-images/image1.svg';
 import googleImage from '../../../assets/resources/home-section/google-icon.svg';

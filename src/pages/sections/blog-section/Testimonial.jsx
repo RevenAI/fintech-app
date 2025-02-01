@@ -1,5 +1,5 @@
 import { useState } from "react";
-import usersData from "../../../utils/usersData";
+import usersData from "../../../data/usersData";
 
 const ITEMS_PER_PAGE = 3; 
 
