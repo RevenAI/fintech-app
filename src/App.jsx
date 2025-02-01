@@ -25,7 +25,7 @@ function App() {
           <AboutSection />
           <AboutSubSection />
       </section>
-      <section style={{marginTop: "400px"}} ref={blogRef} id="blog-section" className="sections">
+      <section ref={blogRef} id="blog-section" className="sections">
           <BlogSection />
       </section>
       <section ref={supportRef} id="support-section" className="sections">

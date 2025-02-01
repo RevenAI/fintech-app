@@ -1,4 +1,85 @@
-/* .inner-blog-section {
-    background-color: black;
-    height: 100vh;
-} */
+// Blog section container
+.outside-blog-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    color: white; 
+  
+    @media (max-width: 768px) {
+      padding: 3rem 1rem;
+    }
+  }
+  
+  // Inner blog section
+  .inside-blog-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5em;
+    max-width: 1200px;
+    width: 100%;
+    background: url('/../../assets/resources/about-section/design1.png') no-repeat;
+   // background-size: cover;
+  }
+  
+  // Section heading
+  .inside-blog-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    color: white;
+  
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .outside-blog-section .blog-vedio {
+    max-width: 100%;
+  }
+
+  // Image container
+  .inside-blog-section > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .blog-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // Blog images
+  .inside-blog-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+ // Download button styling
+.inside-blog-section img[alt="Download mobile app version"] {
+    width: 12rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  
+    &:hover {
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+
+    @media (min-width: 768px) {
+      width: 14rem;
+    }
+  
+    @media (min-width: 1024px) {
+      width: 16rem;
+    }
+  }
+
+  
