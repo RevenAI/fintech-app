@@ -2,7 +2,7 @@ import tinyIcon from '../../../assets/resources/home-section/secure-global-fast-
 import appInfoData from '../../../../data/app-info.json';
 import downloadBtn from '../../../assets/resources/home-section/download-button.svg';
 import watchDemoBtn from '../../../assets/resources/home-section/watch-demo-button.svg';
-import userImages from '../../../utils/usersImageFetcher';
+import usersData from '../../../utils/usersData';
 // hero section images
 import heroImage from '../../../assets/resources/home-section/slider-images/image1.svg';
 import googleImage from '../../../assets/resources/home-section/google-icon.svg';
@@ -39,8 +39,8 @@ const HomeSection = () => {
       </div>
 
       <div className="user-gallery">
-        {userImages?.map((user) => (
-          <img key={user.id} src={user.src} alt={user.alt} className="user-img" />
+        {usersData?.map((user) => (
+          <img key={user.id} src={user.image.src} alt={user.image.alt} className="user-img" />
         ))}
         <p>{appInfoData?.['app-info']?.[2]?.['trust-statement'] || "..."}</p>
       </div>
