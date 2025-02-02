@@ -253,11 +253,11 @@
 @media (max-width: 480px) {
   .home-inner-container {
     h1 {
-      font-size: 1.2em;
+      font-size: 0.9em;
     }
 
     p {
-      font-size: 0.9em;
+      font-size: 0.4em;
     }
   }
 
@@ -278,21 +278,21 @@
     max-width: 300px;
   }
 
-  .techstar-image {
+ .techstar-image {
     top: 10%;
-    left: 2%;
-    width: 40px; 
+    left: -50%;
+    width: 20px; 
   }
 
   .google-image {
-    bottom: 5%;
-    left: 2%;
+    bottom: -10%;
+    left: -50%;
     width: 40px; 
   }
 
   .wallet-image {
-    top: 60%; 
-    right: 2%;
+    top: 70%; 
+    right: -50%;
   }
 
   .edge-line {

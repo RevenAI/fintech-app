@@ -10,19 +10,7 @@ import techstarImage from '../../../assets/resources/home-section/techstar-icon.
 import edgeLine from '../../../assets/resources/home-section/section-one-line.svg';
 import WalletBalance from '../../../components/Recipe/WalletBalance';
 // affiliate companies images
-import accrossImg from '../../../assets/resources/home-section/accross-icon.svg';
-import mpowerImg from '../../../assets/resources/home-section/mpower-icon.svg';
-import paystackImg from '../../../assets/resources/home-section/paystack-icon.svg';
-import prodigyImg from '../../../assets/resources/home-section/prodigy-icon.svg';
-import stripeImg from '../../../assets/resources/home-section/stripe-icon.svg';
-
-const affilateCompaniesImg = [
-  { src: accrossImg, alt: 'Accross' },
-  { src: mpowerImg, alt: 'MPower' },
-  { src: paystackImg, alt: 'Paystack' },
-  { src: prodigyImg, alt: 'Prodigy' },
-  { src: stripeImg, alt: 'Stripe' },
-];
+import affilateCompaniesImg from '../../../data/AffilateCompaniesImg';
 
 const HomeSection = () => {
   return (
