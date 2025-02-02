@@ -87,6 +87,11 @@
   }
 }
 
+.user-gallery-text {
+  text-align: center;
+  font-size: medium;
+}
+
 .hero-section {
   position: relative;
   width: 100%;
@@ -168,18 +173,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; // Allow images to wrap on smaller screens
-  gap: 20px; // Space between images
+  flex-wrap: wrap; 
+  gap: 20px; 
   padding: 20px;
-  margin-top: 20px; // Add some space above the section
+  margin-top: 20px; 
 
   .affilate-img {
-    width: 80px; // Default size for desktop
+    width: 80px; 
     height: auto;
     transition: transform 0.3s ease, opacity 0.3s ease;
 
     &:hover {
-      transform: scale(1.1); // Slight zoom on hover
+      transform: scale(1.1); 
       opacity: 0.9;
     }
   }
@@ -276,6 +281,10 @@
 
   .hero-image img {
     max-width: 300px;
+  }
+
+  .user-gallery-text {
+    font-size: small;
   }
 
  .techstar-image {

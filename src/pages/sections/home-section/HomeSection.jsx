@@ -27,11 +27,11 @@ const HomeSection = () => {
       </div>
 
       <div className="user-gallery">
-        {usersData?.map((user) => (
+        {usersData?.slice(0,5)?.map((user) => (
           <img key={user.id} src={user.image.src} alt={user.image.alt} className="user-img" />
         ))}
-        <p>{appInfoData?.['app-info']?.[2]?.['trust-statement'] || "..."}</p>
       </div>
+      <p className='user-gallery-text'>{appInfoData?.['app-info']?.[2]?.['trust-statement'] || "..."}</p>
 
       <div className="hero-section">
         <div className="home-circle"></div>
