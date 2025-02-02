@@ -10,7 +10,7 @@ import techstarImage from '../../../assets/resources/home-section/techstar-icon.
 import edgeLine from '../../../assets/resources/home-section/section-one-line.svg';
 import WalletBalance from '../../../components/Recipe/WalletBalance';
 // affiliate companies images
-import affilateCompaniesImg from '../../../data/AffilateCompaniesImg';
+import affilateCompaniesImg from '../../../data/affilateCompaniesImg';
 
 const HomeSection = () => {
   return (
